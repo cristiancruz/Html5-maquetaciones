@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Crea tu ensalada</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Baja Salads Deli Expres - El primer restaurant especializado en comida saludable en Guaymas, Sonora.">
+    <meta name="keywords" content="bajasalads, ensaladas, guaymas, baguettes, jugos, yogur, comida saludable, sandwich, paninis, vegie, comida vegetariana,nutrición">
+    <meta name="author" content="bajasalads">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/image-picker.css">
+    <link rel="stylesheet" href="css/alertify.core.css">
+    <link rel="stylesheet" href="css/alertify.default.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/animate.css">
+</head>
+<body>
+  <!--Inicio Header-menu -->
+    <header>
+     <div class="col-xs-12">
+          <a href="index.html"><img src="img/logotipo.png" alt="Logotipo BajaSalads" id="logoBjs" class="animated swing retraso-4"></a>
+     </div>
+     <div class="col-xs-12">
+         <a href="login.html" class="btn btn-danger" id="btnLogin"><span class="glyphicon glyphicon-user"></span> Sign In</a>
+     </div>
+      </header>
+    <nav id="menuHeader">
+       <ul id="navegacion">
+             <li><a href="#">Home</a></li>
+             <li><a href="#">Crea tu Ensalada</a></li>
+             <li><a href="#">Menú</a></li>
+             <li><a href="#">Galeria</a></li>
+             <li><a href="#">Carrito</a></li>
+       </ul>
+    </nav>
+       <div class="headerMobile">
+        <a class="btn-menu"><span class="glyphicon glyphicon-align-justify"></span></a>
+       <nav class="menuMobile">
+         <ul>
+             <li><a href="#"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+             <li><a href="#"><span class="glyphicon glyphicon-cutlery"></span>Crea tu Ensalada</a></li>  
+              <li><a href="#menu"><span class="glyphicon glyphicon-cutlery"></span>Menú</a></li>  
+              <li><a href="#"><span class="glyphicon glyphicon-picture"></span>Galeria</a></li> 
+            <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span>Carrito</a></li> 
+         </ul>
+     </nav>
+     </div>
+     <!--Fin Header-menu -->
+<div class="container">
+ <div class="page-header text-center">
+     <h1 >Crea tu Ensalada</h1>
+     <h2>Vive la experiencia BajaSalads</h2>
+ </div>
+  <ul class="nav nav-tabs" id="normal-tabs">
+     <li class="active"><a data-toggle="tab" href="#paso1">Tamaño</a></li>
+    <li><a data-toggle="tab" href="#paso2">Pollos y Mariscos</a></li>
+    <li><a data-toggle="tab" href="#paso3">Barra fría</a></li>
+    <li><a data-toggle="tab" href="#paso4">Aderezos</a></li>
+     <li><a data-toggle="tab" href="#paso5">Extras</a></li>
+  </ul>
+  <div class="row">
+    <div class="col-xs-12 col-md-6">
+        <div class="tab-content">
+            <div id="paso1" class="tab-pane fade in active">
+          <h3>Tamaño</h3>
+            <div class="alert alert-info fade in" id="alert_inicial">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <strong>Información! </strong>Una vez seleccionado el siguiente paso no podrás cambiar tu tamaño de orden.
+            </div>
+            <select id="porciones" class="image-picker show-labels show-html">
+                  <option value="nada">nada</option>
+                  <option  data-img-src="img/crea_ensalada/chico.png" value="chico">Chico $85</option>
+                  <option data-img-src="img/crea_ensalada/mediano.png" value="mediano" >Mediana $95</option>
+                  <option data-img-src="img/crea_ensalada/grande.png" value="grande">Grande $120</option>
+            </select>
+         <a class="btn btn-primary btnSiguientevalid">Siguiente</a>
+          </div>
+          <div id="paso2" class="tab-pane fade">
+          <h3>Pollos y Mariscos</h3> 
+            <select id="pollos_mariscos" class="image-picker show-labels limit_callback show-html" multiple="multiple">
+                  <option value="nada">nada</option>
+                  <option data-img-src="img/crea_ensalada/pollo1.jpg" value="1">Asado</option>
+                  <option data-img-src="img/crea_ensalada/pollo2.jpg" value="2">Picoso</option>
+                  <option data-img-src="img/crea_ensalada/pollo1.jpg" value="3">BBQ</option>
+                  <option data-img-src="img/crea_ensalada/pollo2.jpg" value="4">Búfalo</option>
+                  <option data-img-src="img/crea_ensalada/pollo1.jpg" value="5">Parmesano</option>
+                  <option data-img-src="img/crea_ensalada/pollo2.jpg" value="6">Otro</option>
+                  <option data-img-src="img/crea_ensalada/pollo1.jpg" value="7">Atún</option>
+                  <option data-img-src="img/crea_ensalada/marisco2.jpg" value="8">Surimi</option>
+                  <option data-img-src="img/crea_ensalada/marisco1.jpg" value="9">Cute Kitten </option>
+            </select>
+            <a class="btn btn-primary btnSiguiente">Siguiente</a>
+         </div>
+    <div id="paso3" class="tab-pane fade">
+    <h3>Barra fría</h3>
+          <select id="barra_fria" class="image-picker show-labels limit_callback show-html"  multiple="multiple">
+              <option value="nada">nada</option>
+              <option data-img-src="img/crea_ensalada/img_1.jpg" value="1">Mango</option>
+              <option data-img-src="img/crea_ensalada/img_2.jpg" value="2">Uva</option>
+              <option data-img-src="img/crea_ensalada/img_3.jpg" value="3">Manzana</option>
+              <option data-img-src="img/crea_ensalada/img_4.jpg" value="4">Plátano</option>
+              <option data-img-src="img/crea_ensalada/img_5.jpg" value="5">Sandía</option>
+              <option data-img-src="img/crea_ensalada/img_1.jpg" value="6">Mango</option>
+              <option data-img-src="img/crea_ensalada/img_2.jpg" value="7">Uva</option>
+              <option data-img-src="img/crea_ensalada/img_3.jpg" value="8">Manzana</option>
+              <option data-img-src="img/crea_ensalada/img_4.jpg" value="9">Plátano</option>
+              <option data-img-src="img/crea_ensalada/img_5.jpg" value="10">Sandía</option>
+              <option data-img-src="img/crea_ensalada/img_1.jpg" value="11">Mango</option>
+              <option data-img-src="img/crea_ensalada/img_2.jpg" value="12">Uva</option>
+              <option data-img-src="img/crea_ensalada/img_3.jpg" value="13">Manzana</option>
+              <option data-img-src="img/crea_ensalada/img_4.jpg" value="14">Plátano</option>
+              <option data-img-src="img/crea_ensalada/img_5.jpg" value="15">Sandía</option>
+              <option data-img-src="img/crea_ensalada/img_1.jpg" value="16">Mango</option>
+              <option data-img-src="img/crea_ensalada/img_2.jpg" value="17">Uva</option>
+              <option data-img-src="img/crea_ensalada/img_3.jpg" value="18">Manzana</option>
+              <option data-img-src="img/crea_ensalada/img_4.jpg" value="19">Plátano</option>
+              <option data-img-src="img/crea_ensalada/img_5.jpg" value="20">Sandía</option>
+              <option data-img-src="img/crea_ensalada/img_1.jpg" value="21">Mango</option>
+              <option data-img-src="img/crea_ensalada/img_2.jpg" value="22">Uva</option>    
+        </select>
+         <a class="btn btn-primary btnAtras">Atras</a>
+         <a class="btn btn-primary btnSiguiente">Siguiente</a>
+    </div>
+    <div id="paso4" class="tab-pane fade">
+    <h3>Aderezos</h3> 
+     <select id="aderezos" class="image-picker show-labels limit_callback show-html" multiple="multiple">
+              <option value="nada">nada</option>
+              <option data-img-src="img/crea_ensalada/aderezo.png" value="1">Ranch</option>
+              <option data-img-src="img/crea_ensalada/aderezo.png" value="2">Chipotle</option>
+              <option data-img-src="img/crea_ensalada/aderezo.png" value="3">Cilantro</option>
+              <option data-img-src="img/crea_ensalada/aderezo.png" value="4">Mil islas</option>
+              <option data-img-src="img/crea_ensalada/aderezo.png" value="5">César</option>
+              <option data-img-src="img/crea_ensalada/aderezo.png" value="6">Vinagreta</option>
+              <option data-img-src="img/crea_ensalada/aderezo.png" value="7">Italiano</option>
+              <option data-img-src="img/crea_ensalada/aderezo.png" value="8">Aceite de Oliva</option>
+              <option data-img-src="img/crea_ensalada/aderezo.png" value="9">Mostaza miel</option>
+    </select>
+        <a class="btn btn-primary btnAtras">Atras</a>
+        <a class="btn btn-primary btnSiguiente">Siguiente</a>
+    </div>
+    <div id="paso5" class="tab-pane fade">
+    <h3>Croutones</h3>
+        <select id="extras" class="image-picker show-labels limit_callback show-htm" multiple="multiple">
+              <option value="nada">nada</option>
+              <option data-img-src="img/crea_ensalada/croutones.png" value="1">Croutones</option>
+              <option data-img-src="img/crea_ensalada/croutones.png" value="2">Sopita</option>
+        </select>
+        <a class="btn btn-primary btnAtras">Atras</a>
+        <button type="button" class="btn btn-success btn-compra" data-toggle="modal" data-target="#nombra-ensalada">Terminar</button>
+    </div>
+      </div>
+   </div>
+   <div class="modal fade" id="nombra-ensalada" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title text-center">Nombra tu ensalada</h4>
+        </div>
+        <div class="modal-body">
+       <form>
+                <div class="form-group">
+                  <label for="name">Nombre:</label>
+                  <input type="text" class="form-control" id="name" required autofocus placeholder="Nombre de tu ensalada">
+                </div>
+                 <div class="form-group">
+                                  <select class="form-control" id="cant">
+                                    <option >1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                  </select>
+                               </div>
+               <div class="form-group">
+                  <label for="comment">Comentarios:</label>
+                  <textarea class="form-control" rows="5" id="comment"></textarea>
+            </div>
+         <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-shopping-cart" ></span> Añadir al carrito</button>
+        </form>
+              
+        </div>
+        <div class="modal-footer">
+                
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="col-xs-12 col-md-6">
+    <h3 class="text-center title-tables">Información Nutrimental</h3>
+    <table class="table table-striped table-bordered text-center">
+        <thead>
+             <tr>
+                 <th class="text-center">Porción</th>
+                 <th class="text-center">Valor</th>
+             </tr>
+         </thead>
+         <tbody>
+              <tr>
+                 <td>Cal</td>
+                 <td>0g</td>
+              </tr>
+              <tr>
+                 <td>Cal/Fat</td>
+                 <td>0g</td>
+              </tr>
+              <tr>
+                 <td>Fat</td>
+                 <td>0g</td>
+              </tr>
+              <tr>
+                 <td>SatFat</td>
+                 <td>0g</td>
+              </tr>
+              <tr>
+                 <td>Chol</td>
+                 <td>0g</td>
+              </tr>
+              <tr>
+                 <td>Sod</td>
+                 <td>0g</td>
+              </tr>
+              <tr>
+                 <td>Carbo.</td>
+                 <td>0g</td>
+              </tr>
+              <tr>
+                 <td>Fiber</td>
+                 <td>0g</td>
+              </tr>
+              <tr>
+                 <td>Sugar</td>
+                 <td>0g</td>
+              </tr>
+              <tr>
+                 <td>Protein</td>
+                 <td>0g</td>
+              </tr>
+              <tr>
+                 <td>TransFat</td>
+                 <td>0g</td>
+              </tr>
+         </tbody>
+        </table>
+      </div>
+ </div>
+</div>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/image-picker.min.js"></script>
+    <script type="text/javascript" src="js/alertify.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

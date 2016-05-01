@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Crea tu ensalada</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Baja Salads Deli Expres - El primer restaurant especializado en comida saludable en Guaymas, Sonora.">
+    <meta name="keywords" content="bajasalads, ensaladas, guaymas, baguettes, jugos, yogur, comida saludable, sandwich, paninis, vegie, comida vegetariana,nutrición">
+    <meta name="author" content="bajasalads">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/image-picker.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+</head>
+<body>
+ <!--Inicio Header-menu -->
+    <header>
+     <div class="col-xs-12">
+          <a href="index.html"><img src="img/logotipo.png" alt="Logotipo BajaSalads" id="logoBjs" class="animated swing retraso-4"></a>
+     </div>
+     <div class="col-xs-12">
+         <button class="btn btn-danger" id="btnLogout">Sign In4fder</button>
+     </div>
+    </header>
+    <nav id="menuHeader">
+   <a href="pago.html"> <img src="img/compras.png" alt="carrito de compras" id="logoCarrito" class="zoom"></a>
+    </nav>
+    <!--FIN Header-menu -->
+<div class="container">
+ <div class=" text-center">
+     <h1>Menú</h1>
+ </div>
+
+  <div class="row">
+    <div class="col-xs-12 col-md-6" id="menuProductos">
+
+             <div class="panel-group" id="accordion">
+
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4  class="panel-title "><a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Paninis</a></h4>
+                </div>
+                <div id="collapse1" class="panel-collapse collapse in">
+                  <div class="panel-body">
+                    <select id="paninis" class="image-picker show-labels show-html"  multiple="multiple">
+                      <option value="nada">nada</option>
+                      <option data-img-src="img/sd.jpg" value="1">Pechuga en salsa de melocotón</option>
+                      <option data-img-src="img/sd.jpg" value="2">Baja $98</option>
+                      <option data-img-src="img/sd.jpg" value="3">Florenta $95</option>
+                      <option data-img-src="img/sd.jpg" value="4">Veggie $88</option>
+                      <option data-img-src="img/sd.jpg" value="5">Expreso $82</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Hamburguesas</a></h4>
+                </div>
+                <div id="collapse2" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <select id="hambur" class="image-picker show-labels show-html"  multiple="multiple">
+                      <option value="nada">nada</option>
+                      <option data-img-src="img/sd.jpg" value="1">Baja Burguer $90</option>
+                      <option data-img-src="img/sd.jpg" value="2">Baja Chicken $88</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Sopas</a></h4>
+                </div>
+                <div id="collapse3" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <select id="sopas" class="image-picker show-labels show-html"  multiple="multiple">
+                      <option value="nada">nada</option>
+                      <option data-img-src="img/sd.jpg" value="1">De tortilla $55</option>
+                      <option data-img-src="img/sd.jpg" value="2">De tomate $55</option>
+                       <option data-img-src="img/sd.jpg" value="3">De verduras $55</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Cremas</a></h4>
+                </div>
+                <div id="collapse4" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <select id="cremas" class="image-picker show-labels show-html"  multiple="multiple">
+                      <option value="nada">nada</option>
+                      <option data-img-src="img/sd.jpg" value="1">De brokoli $52</option>
+                      <option data-img-src="img/sd.jpg" value="2">De poblano $52</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse5">Baguettes</a></h4>
+                </div>
+                <div id="collapse5" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <select id="baguets" class="image-picker show-labels show-html"  multiple="multiple">
+                      <option value="nada">nada</option>
+                      <option data-img-src="img/sd.jpg" value="1">Atlantic $96</option>
+                      <option data-img-src="img/sd.jpg" value="2">Vegetariano $88</option>
+                      <option data-img-src="img/sd.jpg" value="3">Angus $104</option>
+                      <option data-img-src="img/sd.jpg" value="4">California $88</option>
+                      <option data-img-src="img/sd.jpg" value="5">Florida $55</option>
+                      <option data-img-src="img/sd.jpg" value="6">Philadelhpia $65</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse6">Lasagna</a></h4>
+                </div>
+                <div id="collapse6" class="panel-collapse collapse">
+                  <div class="panel-body">
+                     <select id="lasagna" class="image-picker show-labels show-html"  multiple="multiple">
+                      <option value="nada">nada</option>
+                      <option data-img-src="img/sd.jpg" value="1">Alfredo $98</option>
+                      <option data-img-src="img/sd.jpg" value="2">Bolognesa $98</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse7">Platillos</a></h4>
+                </div>
+                <div id="collapse7" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <select id="platillos" class="image-picker show-labels show-html"  multiple="multiple">
+                      <option value="nada">nada</option>
+                      <option data-img-src="img/sd.jpg" value="1">Boneless $87</option>
+                      <option data-img-src="img/sd.jpg" value="2">Fish & Chips $105</option>
+                      <option data-img-src="img/sd.jpg" value="3">Pechuga en salsa M. $125</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse8">Pastas</a></h4>
+                </div>
+                <div id="collapse8" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <select id="pastas" class="image-picker show-labels show-html"  multiple="multiple">
+                      <option value="nada">nada</option>
+                      <option data-img-src="img/sd.jpg" value="1">Fetucccine de pollo $120</option>
+                      <option data-img-src="img/sd.jpg" value="2">Fetucccine de C. $135</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse9">Frutas</a></h4>
+                </div>
+                <div id="collapse9" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <select id="frutas" class="image-picker show-labels show-html"  multiple="multiple">
+                      <option value="nada">nada</option>
+                      <option data-img-src="img/sd.jpg" value="1">Con frutas $48</option>
+                      <option data-img-src="img/sd.jpg" value="2">Ensalada de frutas $65</option>
+                    </select>
+                  </div>
+                </div>
+              </div> 
+
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse10">Desayunos</a></h4>
+                </div>
+                <div id="collapse10" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <select id="desayunos" class="image-picker show-labels show-html"  multiple="multiple">
+                      <option value="nada">nada</option>
+                      <option data-img-src="img/sd.jpg" value="1">Avena $45</option>
+                      <option data-img-src="img/sd.jpg" value="2">Pancakes $55</option>
+                      <option data-img-src="img/sd.jpg" value="3">Waffles $65</option>
+                      <option data-img-src="img/sd.jpg" value="4">Crema de trigo $45</option>
+                    </select>
+                  </div>
+                </div>
+              </div> 
+
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse11">Omeletts</a></h4>
+                </div>
+                <div id="collapse11" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <select id="omelets" class="image-picker show-labels show-html"  multiple="multiple">
+                      <option value="nada">nada</option>
+                      <option data-img-src="img/sd.jpg" value="1">Florentina $65</option>
+                      <option data-img-src="img/sd.jpg" value="2">Mediterraneo $65</option>
+                      <option data-img-src="img/sd.jpg" value="3">Camarón $75</option>
+                      <option data-img-src="img/sd.jpg" value="4">Vegetariano $55</option>
+                    </select>
+                  </div>
+                </div>
+              </div> 
+
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse12">Bebidas</a></h4>
+                </div>
+                <div id="collapse12" class="panel-collapse collapse">
+                  <div class="panel-body">
+                     <select id="bebidas" class="image-picker show-labels show-html"  multiple="multiple">
+                      <option value="nada">nada</option>
+                      <option data-img-src="img/sd.jpg" value="1">Jugos $30</option>
+                      <option data-img-src="img/sd.jpg" value="2">Licuados $30</option>
+                      <option data-img-src="img/sd.jpg" value="3">Refrescos $15</option>
+                      <option data-img-src="img/sd.jpg" value="4">Agua natural $12</option>
+                       <option data-img-src="img/sd.jpg" value="5">Té helado $17</option>
+                      <option data-img-src="img/sd.jpg" value="6">Cafe $15</option>
+                      <option data-img-src="img/sd.jpg" value="7">Aguas frescas $12</option>
+                      <option data-img-src="img/sd.jpg" value="8">Ciel de sabor $15</option>
+                    </select>
+                  </div>
+                </div>
+              </div> 
+      
+    </div>
+   </div>
+ 
+    <div class="col-xs-12 col-md-6">
+    <table class="table table-striped table-bordered text-center">
+        <thead>
+             <tr>
+                 <th class="text-center">Nombre</th>
+                 <th class="text-center">Precio</th>
+                 <th class="text-center">Cantidad</th>
+             </tr>
+         </thead>
+         <tbody>
+              <tr>
+                 <td>Soda 600ml</td>
+                 <td>10</td>
+                 <td>
+                  <div class="form-group">
+                                  <select class="form-control" id="cantidad">
+                                    <option >1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                  </select>
+                </div>
+                 </td>
+              </tr>
+               <tr>
+                 <td>Brooklin</td>
+                 <td>12</td>
+                 <td>
+                  <div class="form-group">
+                                  <select class="form-control" id="cantidad">
+                                    <option >1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                  </select>
+                </div>
+                 </td>
+              </tr>
+              
+         </tbody>
+        </table>
+        <div class="row text-center">
+            <div class="col-xs-12 col-md-6"><span id="total">Total: $22</span></div>
+            <div class="col-xs-12 col-md-6"> <button type="submit" class="btn btn-success btn-block " id="addCarritoMenu"><span class="glyphicon glyphicon-shopping-cart" ></span> Añadir al carrito</button></div>
+        </div>
+       
+      </div>
+ </div>
+</div>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/image-picker.min.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+</body>
+</html>

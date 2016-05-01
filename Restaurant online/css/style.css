@@ -1,0 +1,306 @@
+/*@import url(https://fonts.googleapis.com/css?family=Lato);*/
+/*@import url(https://fonts.googleapis.com/css?family=Cabin);*/
+
+
+.alertify {
+    background: #FFF;
+    border: 1px solid #333;
+}
+
+body{
+    margin: auto;
+    padding: 0;
+    background-color: #fff;
+    font-family: Arial;
+}
+ @font-face{
+        font-family:Harabara;
+        src:url('../fonts/Harabara.ttf');
+    }
+/* Inicio header*/
+header{
+    width: 100%;
+    height: 140px;
+    background-color: #fff;
+}
+#logoBjs{
+    max-width: 219px;
+    max-height: 110px;
+}
+#btnLogin{    
+    width: 92px;
+    height: 35px;
+    font-size:15px;
+    background-color: #ea675d;
+}
+#btnLogout{    
+   /* width: 92px;
+    height: 35px;
+    font-size:15px;
+    background-color:#ea675d ;
+    border-color: #ea675d;
+    color:#fff;*/
+}
+.btnLogout, .btnLogout:hover{
+    font-size:15px;
+    background-color:#ea675d;
+    border-color: #ea675d;
+    color:#fff!important;
+}
+#menuHeader,#menuHeader2{
+    width: 100%;
+    height: 52px;
+    background: #0bbe5f;
+}
+#avatarUs{
+    width: 40px;
+    height:40px;
+}
+/*fin header*/
+#logo-compras{
+    float: right;
+    width: 50px;
+    height: 50px;
+}
+#logoCarrito{
+    float: right;
+    width: 40px;
+    height: 40px;
+    margin-top: 6px;
+    margin-right: 15px;
+}
+.zoom{
+     transition: width 0.1s, height 0.1s, transform 0.1s;
+     -moz-transition: width 0.5s, height 0.5s, -moz-transform 0.5s;
+     -webkit-transition: width 0.5s, height 0.5s, -webkit-transform 0.5s;
+     -o-transition: width 0.5s, height 0.5s,-o-transform 0.5s;
+    }
+.zoom:hover{
+     transform : scale(1.2);
+     -moz-transform : scale(1.2);     
+     -webkit-transform : scale(1.2);  
+     -o-transform : scale(1.2);  
+    
+}
+.page-header>h1{
+color:#b1d648;
+}
+.page-header h2{
+ color:#FFA500;
+}
+.title-tables,.tab-content h3 {
+ color: #ffb538;
+}
+/*Inicio carrito de compras*/
+.panel-title>a{
+    text-decoration: none;
+}
+.table-responsive {
+    width: 100%;
+    height: 160px;
+    margin-bottom: 15px;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    overflow-x: auto;  
+}
+.panel-default>.panel-heading { 
+/*    color:#FF4500;*/
+    color: #ed3237;
+/*    background-color:#b1d648;*/
+    border-color: #ddd; 
+}
+.panel {
+    margin-bottom: 20px;
+    background-color: #f1f1f1;
+}
+/*Inicio Crea tu ensalada*/
+.tab-content img, #menuProductos img{
+    height: 70px;
+    width: 80px;
+    cursor:pointer;
+}
+.container .nav li {
+    width: 20%;
+    pointer-events: none;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    color: #f1f1f1;
+    cursor: none;
+    font-size: 1.2em;
+    background-color: #b1d648;
+}
+.nav-tabs>li>a{
+    font-size: 1.2em;
+    color:#b1d648;
+    font-weight: bold;
+}
+.btnSiguiente,.btnAtras,.btn-compra{margin-bottom: 15px;}
+.thumbnail {
+   max-width: 99px;
+    height: 135px;
+}
+.thumbnail>p{
+  margin-top: 7px;
+}
+.selected p{
+    color: #fff;
+}
+.nav-tabs {
+  border-bottom: none;
+}
+.page-header {
+  border-bottom: none;
+}
+
+/*Inicio Menu*/
+#total{
+    font-size: 2em;
+}
+#addCarritoMenu{
+    margin-bottom: 10px;
+}
+/*Fin menu*/
+
+/*INICIO GALERIA*/
+#links img{
+    width: 120px;
+    height: 120px;
+}
+/*FIN GALERIA*/
+/* INICIO LOGIN*/
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+/*FIN LOGIN*/
+/*menu normal*/
+.panel-body>img{
+    display: block;
+    max-width: 100%;
+    border: 0;
+    height: auto;
+}
+.panel-body2 {
+    padding: 0px; 
+}
+.precio{float:right;}
+.areasMenu{
+    padding: 10px;
+}
+.areasMenu span{
+    text-transform: uppercase;
+}
+
+#accordion h4{font-size: 1.3em;}
+/*menu normal*/
+#btnUbicacion, #btnUbicacion:hover{pointer-events: visible; text-decoration: none;cursor: pointer;}
+/*******************Media Queries************************/
+/* Phones */ 
+@media only screen and (max-width : 480px){
+       .container .nav li {display: none;}
+    header{
+        height: 170px;
+    }
+    #logoBjs{
+        position: absolute;
+        width: 180px;
+        margin-left: -70px;
+        margin-top: 10px;
+        left: 45%; 
+    }
+    #btnLogin, #btnLogout{    
+        position: absolute;
+        margin-left: -30px;
+        margin-top: 110px;
+        left: 45%;    
+}
+    /*galeria*/
+    #links img{
+    width: 100px;
+    height: 100px;
+}
+}
+/* Tablets */
+@media only screen and (min-width :481px) and (max-width: 768px)  {
+    header{
+        height: 170px;
+    }
+    #logoBjs{
+        position: absolute;
+        width: 180px;
+        margin-left: -70px;
+        margin-top: 10px;
+        left: 45%; 
+    }
+    #btnLogin, #btnLogout{    
+        position: absolute;
+        margin-left: -30px;
+        margin-top: 110px;
+        left: 45%;    
+}
+}
+ /*pc mediana*/
+ @media only screen and (min-width :769px) and (max-width: 991px) { 
+      #logoBjs{
+        margin-top: 15px;
+        margin-left: 40px;
+    }
+     #btnLogin, #btnLogout{    
+        margin-top: -70px;
+        margin-right: 60px;
+        float: right;    
+}
+}
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) and (max-width: 1199px) {
+     #logoBjs{
+        margin-top: 15px;
+        margin-left: 120px;
+    }
+     #btnLogin, #btnLogout{    
+        margin-top: -70px;
+        margin-right: 180px;
+        float: right;    
+}
+}
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+     #logoBjs{
+        margin-top: 15px;
+        margin-left: 120px;
+    }
+     #btnLogin, #btnLogout{    
+        margin-top: -70px;
+        margin-right: 180px;
+        float: right;    
+}
+}
