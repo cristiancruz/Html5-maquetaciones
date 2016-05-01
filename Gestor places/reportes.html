@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor Places</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="fonts.css">    
+</head>
+<body>
+    <header class="header-profile"> 
+       <span>Places</span>
+        <img src="img/logo-pin.png" alt="logo">      
+    </header>
+
+     <div class="title-menu" id="fixed-menu">
+      <a href="#" class="btn-menu"><span class="icon-menu"></span>Menu</a>
+     </div>
+     <nav>
+         <ul>
+             <li><a href="clientes.html"><span class="icon-user-tie"></span>Clientes</a></li>
+             <li><a href="empresas.html"><span class="icon-office"></span>Empresas</a></li>
+             <li><a href="reportes.html"><span class="icon-clipboard"></span>Reportes</a></li>  
+             <li><a href="estadisticas.html"><span class="icon-stats-dots"></span>Estadisticas</a></li>  
+             <li><a href="#"><span class="icon-switch"></span>Cerrar sesion</a></li> 
+         </ul>
+     </nav>
+    <div id="content-principal">
+    <p class="info-seccion" id="vete">En esta sección podrás gestionar la información sobre las empresas  y clientes con la finalidad de poder vizualizar y poder generar reportes dependiento de la necesidad del momento, a si como analizar la informacion mas importante.</p>
+      
+      <div class="tabs">
+          <ul class="tabs-nav">
+              <li id="pestana1"><a href="#tab1">Clientes</a></li>
+              <li id="pestana2"><a href="#tab2">Empresas</a></li>
+          </ul>
+          
+          <div id="tab1" class="contenido">
+           <div class="AreaBusquedas">
+                  <div class="reportes-busquedas">
+                     <input type="search" class="txtbuscador2" placeholder="Buscar clientes...">
+                     <button type="submit" class="btn-search2"><span class="icon-search"></span></button>
+                  </div>
+                 <div class="ResultClientes" >
+                     <ul>
+                          <li>Juan Lopez lopez</li>
+                          <li>Pedro Lopez Lopez</li>
+                          <li>luis Lopez Lopez</li>
+                          <li>Juan Lopez Lopez</li>
+                          <li>goku Lopez Lopez</li>
+                          <li>Juan Lopez Lopez</li>
+                          <li>Pedro Lopez Lopez</li>
+                          <li>luis Lopez Lopez</li>
+                          <li>Juan Lopez Lopez</li>
+                          <li>goku kakaroto Lopez Lopez</li>
+                          <li>Pedro Lopez Lopez</li>
+                          <li>luis Lopez Lopez</li>
+                          <li>Juan Lopez Lopez</li>
+                          <li>goku Lopez Lopez</li>
+                      </ul>
+                 </div>
+                 
+              </div>
+              <div class="Area-Resultados-table">
+                  <div class="filtros">
+                
+                        <div class="filt2">
+                              <input type="radio" name="filtroC2" value="Menor" checked>Menor a mayor &nbsp; &nbsp;
+                              <input type="radio" name="filtroC2" value="Mayor">Mayor a menor
+                         </div>     
+                 </div>
+                 <div id="contentTable">
+                      <table class="tblResult">
+                     <thead>
+                             <tr>
+                                <td>Empresa</td>
+                                <td>Fecha</td>
+                                <td>Pago</td> 
+                                <td>Detalles</td>
+                             </tr>
+                     </thead>
+                    <tbody>
+                            <tr>
+                                <td>Walmart </td>
+                                <td>22-12-2017</td>
+                                <td>si</td>
+                                <td>si paga a tiempo y con el tenemos buenas ganancias</td>
+                            </tr>
+                            <tr>
+                                <td>Walmart</td>
+                                <td>22-12-2017</td>
+                                <td>si</td>
+                                <td>si paga a tiempo y con el tenemos buenas ganancias</td>
+                            </tr>
+                            <tr>
+                                <td>Walmart</td>
+                                <td>22-12-2017</td>
+                                <td>si</td>
+                                <td>si paga a tiempo y con el tenemos buenas ganancias</td>
+                            </tr>
+                            <tr>
+                                <td>Walmart</td>
+                                <td>22-12-2017</td>
+                                <td>si</td>
+                                <td>si paga a tiempo y con el tenemos buenas ganancias</td>
+                            </tr>
+                            <tr>
+                                <td>Walmart</td>
+                                <td>22-12-2017</td>
+                                <td>si</td>
+                                <td>si paga a tiempo y con el tenemos buenas ganancias</td>
+                            </tr>
+                            <tr>
+                                <td>Walmart</td>
+                                <td>22-12-2017</td>
+                                <td>si</td>
+                                <td>si paga a tiempo y con el tenemos buenas ganancias</td>
+                            </tr>
+                            <tr>
+                                <td>Walmart</td>
+                                <td>22-12-2017</td>
+                                <td>si</td>
+                                <td>si paga a tiempo y con el tenemos buenas ganancias</td>
+                            </tr>
+                            <tr>
+                                <td>Walmart</td>
+                                <td>22-12-2017</td>
+                                <td>si</td>
+                                <td>si paga a tiempo y con el tenemos buenas ganancias</td>
+                            </tr>
+                            <tr>
+                                <td>Walmart</td>
+                                <td>22-12-2017</td>
+                                <td>si</td>
+                                <td>si paga a tiempo y con el tenemos buenas ganancias</td>
+                            </tr>
+
+                    </tbody>
+                  </table>
+                 </div>
+                 <button class="btnPDF">Generar PDF <span class="icon-profile"></span></button>
+              </div>
+        
+             </div>
+                  
+              </div>
+              <div id="tab2" class="contenido">
+                 <div class="AreaBusquedas">
+                      <div class="reportes-busquedas">
+                         <input type="search" class="txtbuscador2" placeholder="Buscar Empresas...">
+                         <button type="submit" class="btn-search2"><span class="icon-search"></span></button>
+                      </div>
+                     <div class="ResultEmpresas" >
+                         <ul>
+                              <li>Walmart Sa de vc de no se</li>
+                              <li>Home Depot</li>
+                              <li>Walmart Sa de vc de no se</li>
+                              <li>Home Depot</li>
+                          </ul>
+                     </div>
+                 
+                 </div>
+                 <div class="Area-Resultados-table">
+                 
+                 <div id="contentTable">
+                      <table class="tblResult">
+                         <thead>
+                             <tr>
+                                <td>Cliente</td>
+                                <td>Fecha</td>
+                                <td>Pago</td> 
+                                <td>Detalles</td>
+                             </tr>
+                         </thead>
+                      
+                        <tbody>
+                            <tr>                              
+                                <td>Juan luis Lopez Lopez</td>
+                                <td>22-12-2017</td>
+                                <td>si</td>
+                                <td>si paga a tiempo y con el tenemos buenas ganancias</td>
+                            </tr>
+                            <tr>                              
+                                <td>Juan luis Lopez Lopez</td>
+                                <td>22-12-2017</td>
+                                <td>si</td>
+                                <td>si paga a tiempo y con el tenemos buenas ganancias</td>
+                            </tr>
+                            <tr>                              
+                                <td>Juan luis Lopez Lopez</td>
+                                <td>22-12-2017</td>
+                                <td>si</td>
+                                <td>si paga a tiempo y con el tenemos buenas ganancias</td>
+                            </tr>
+                            <tr>                              
+                                <td>Juan luis Lopez Lopez</td>
+                                <td>22-12-2017</td>
+                                <td>si</td>
+                                <td>si paga a tiempo y con el tenemos buenas ganancias</td>
+                            </tr>
+                            <tr>                              
+                                <td>Juan luis Lopez Lopez</td>
+                                <td>22-12-2017</td>
+                                <td>si</td>
+                                <td>si paga a tiempo y con el tenemos buenas ganancias</td>
+                            </tr>
+                            <tr>                              
+                                <td>Juan luis Lopez Lopez</td>
+                                <td>22-12-2017</td>
+                                <td>si</td>
+                                <td>si paga a tiempo y con el tenemos buenas ganancias</td>
+                            </tr>
+                          
+                        </tbody>
+                  </table>
+                 </div>
+                 <button class="btnPDF">Generar PDF <span class="icon-profile"></span></button>
+              </div>
+              </div>
+          </div>
+
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/acciones.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+

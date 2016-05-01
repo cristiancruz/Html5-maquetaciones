@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor Places</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="fonts.css">    
+</head>
+<body>
+    <header class="header-profile"> 
+       <span>Places</span>
+        <img src="img/logo-pin.png" alt="logo">      
+    </header>
+
+     <div class="title-menu" id="fixed-menu">
+      <a href="#" class="btn-menu"><span class="icon-menu"></span>Menu</a>
+     </div>
+     <nav>
+         <ul>
+             <li><a href="clientes.html"><span class="icon-user-tie"></span>Clientes</a></li>
+             <li><a href="empresas.html"><span class="icon-office"></span>Empresas</a></li>
+             <li><a href="reportes.html"><span class="icon-clipboard"></span>Reportes</a></li>  
+             <li><a href="estadisticas.html"><span class="icon-stats-dots"></span>Estadisticas</a></li>  
+             <li><a href="#"><span class="icon-switch"></span>Cerrar sesion</a></li> 
+         </ul>
+     </nav>
+    <div id="content-principal">
+    <section id="area-busquedas">
+         <button type="submit" class="btn-Registro "><a href="javascript:openModalR();"><span class="icon-plus"> </span>Registrar</a></button>
+         <input type="search" class="txtbuscador" placeholder="Buscar...">
+        <button type="submit" class="btn-search"><span class="icon-search"></span></button>
+    </section>
+    <p class="info-seccion" id="vete">En esta sección podrás gestionar la información sobre las empresas como por ejemplo dar de alta un registro, actualizarlo o eliminarlo. También se podrán gestionar las búsquedas basadas en diferentes criterios.</p>
+
+           <div class="ventanaModalR">
+        <div class="content-modalR">
+            <div id="title-modal">
+                <h2>Registro Empresas</h2>
+             <button class="btn-modal regresarR"><a href="javascript:closeModalR();">Regresar<span class="icon-arrow-right"></span></a></button>    
+            </div>
+
+             <div class="info-modal">
+                <div id="formulario">
+      
+       <div class="labelform"><label for="name">Empresa:</label></div>
+       <div><input type="text" placeholder="empresa" required></div>
+       
+         <div class="labelform"><label for="pago">Clientes:</label></div>
+           <div>   
+				<select class="cbxMedidas">
+				    <option></option>
+				    <option>Juan perez gonzales sabe</option>
+				    <option>Luis perez gonzales sabe</option>
+				</select>
+            </div> 
+                    
+        <div class="labelform"><label for="categoria">Categoria:</label></div>
+       <div>   
+			<select class="cbxMedidas">
+				   <option></option>
+				   <option>Hoteles</option>
+				   <option>Restauranes</option>
+				   <option>etc</option>
+			</select>
+       </div> 
+       
+            <div class="labelform"><label for="direccion">Direccion:</label></div>
+       <div><input type="text" placeholder="direccion" required></div>    
+        
+       <div class="labelform"><label for="descripcion">Descripcion:</label></div>
+       <div><input type="text" placeholder="descripcion" required></div>       
+       
+       <div class="labelform"><label for="telefono">Telefono:</label></div>
+       <div><input type="tel" placeholder="telefono" required></div>  
+       
+             
+       <div id="btnGuardar">
+        <button class="btn-modal"><a href="javascript:closeModal();">Registrar</a></button>
+       </div>
+        
+   </div>               
+       </div>
+         </div>    
+     </div>
+
+    <div class="ventanaModal">
+        <div class="content-modal">
+            <div id="title-modal">
+                <h2>Informacion</h2>
+             <button class="btn-modal regresar"><a href="javascript:closeModal();">Regresar<span class="icon-arrow-right"></span></a></button>    
+            </div>
+
+             <div class="info-modal">
+                 <img src="img/imgP.jpg" alt="prueba">
+                 <h3>El mojito bar</h3>
+                  <p><strong>Telefono: </strong>622-123-2343</p>
+                  <p><strong>Cliente :</strong>juan perez</p> 
+                  <p><strong>Categoria: </strong>hotel</p> 
+                  <p><strong>Rating <span  class="icon-star-full">: </strong>4</p>
+                  <p><strong>Direccion: </strong>empalme sonora</p>
+                  <p><strong>Descripcion: </strong>ejhdjfhdj dfj dfjdf kdjf djf dkj fdkj fjdk fdjkf djkf djkf djkf</p>
+                      <div class="buttons-modal">
+                        <button type="submit" class="btn-modal"><a href="javascript:openModalEditEmpresas();">Editar<span  class="icon-pencil"></span></a></button>
+                        <button type="submit" class="btn-modal">Eliminar<span  class="icon-cross"></span></button>
+                     </div>
+             </div>    
+     </div>
+       
+    </div>
+     <div class="ventanaModal-edit-em">
+        <div class="content-modal-edit">
+            <div id="title-modal">
+                <h2>Edicion Empresas</h2>
+             <button class="btnModalsalir regresarR"><a href="javascript:closeModalEditEmpresas();"><span class="icon-cross"></span></a></button>    
+            </div>
+
+             <div class="info-modal">
+                <div id="formulario">
+      
+       <div class="labelform"><label for="name">Empresa:</label></div>
+       <div><input type="text" required></div>
+       
+       <div class="labelform"><label for="pago">Clientes:</label></div>
+           <div>   
+				<select class="cbxMedidas">
+				    <option></option>
+				    <option>Juan perez gonzales sabe</option>
+				    <option>Luis perez gonzales sabe</option>
+				</select>
+            </div> 
+                    
+        <div class="labelform"><label for="categoria">Categoria:</label></div>
+       <div>   
+				<select class="cbxMedidas">
+				    <option></option>
+				    <option>Hoteles</option>
+				    <option>Restauranes</option>
+				    <option>etc</option>
+				</select>
+       </div> 
+       
+            <div class="labelform"><label for="direccion">Direccion:</label></div>
+       <div><input type="text"  required></div>    
+        
+       <div class="labelform"><label for="descripcion">Descripcion:</label></div>
+       <div><input type="text"  required></div>       
+       
+       <div class="labelform"><label for="telefono">Telefono:</label></div>
+       <div><input type="tel"  required></div>  
+           
+       <div id="btnGuardar">
+        <button class="btn-modal">Guardar <span class="icon-checkmark"></span></button>
+       </div>
+        
+   </div>               
+       </div>
+         </div>    
+     </div>
+    <div class="container-result">
+         <ul>
+             <li class="resultSearch listReset">
+             <a href="javascript:openModal();">
+                  <img src="img/imgP.jpg" alt="Foto prueba">
+                 <h2>Holiday Inn Express de Guaymas S.A DE V.C</h2>
+		         <p>622 123 4545</p>
+             </a>
+             </li>
+              <li class="resultSearch listReset">
+             <a href="javascript:openModal();">
+                  <img src="img/imgP.jpg" alt="Foto prueba">
+                 <h2>Hospital General de Guaymas el grande y bonito de la 10 famus</h2>
+		         <p>622 123 4545</p>
+             </a>
+             </li>
+              <li class="resultSearch listReset">
+             <a href="javascript:openModal();">
+                  <img src="img/imgP.jpg" alt="Foto prueba">
+                 <h2>Restauran bar el sauce y la palma</h2>
+		         <p>622 123 4545</p>
+             </a>
+             </li>
+              <li class="resultSearch listReset">
+             <a href="javascript:openModal();">
+                  <img src="img/imgP.jpg" alt="Foto prueba">
+                 <h2>El mojito</h2>
+		         <p>622 123 4545</p>
+             </a>
+             </li>
+              <li class="resultSearch listReset">
+             <a href="javascript:openModal();">
+                  <img src="img/imgP.jpg" alt="Foto prueba">
+                 <h2>El mojito</h2>
+		         <p>622 123 4545</p>
+             </a>
+             </li>
+              <li class="resultSearch listReset">
+             <a href="javascript:openModal();">
+                  <img src="img/imgP.jpg" alt="Foto prueba">
+                 <h2>El mojito</h2>
+		         <p>622 123 4545</p>
+             </a>
+             </li>
+              <li class="resultSearch listReset">
+             <a href="javascript:openModal();">
+                  <img src="img/imgP.jpg" alt="Foto prueba">
+                 <h2>El mojito</h2>
+		         <p>622 123 4545</p>
+             </a>
+             </li>
+              <li class="resultSearch listReset">
+             <a href="javascript:openModal();">
+                  <img src="img/imgP.jpg" alt="Foto prueba">
+                 <h2>El mojito</h2>
+		         <p>622 123 4545</p>
+             </a>
+             </li>
+              <li class="resultSearch listReset">
+             <a href="javascript:openModal();">
+                  <img src="img/imgP.jpg" alt="Foto prueba">
+                 <h2>El mojito</h2>
+		         <p>622 123 4545</p>
+             </a>
+             </li>
+              <li class="resultSearch listReset">
+             <a href="javascript:openModal();">
+                  <img src="img/imgP.jpg" alt="Foto prueba">
+                 <h2>El mojito</h2>
+		         <p>622 123 4545</p>
+             </a>
+             </li>
+
+    </ul> 
+    </div>
+       
+ 
+
+    </div>
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/acciones.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
